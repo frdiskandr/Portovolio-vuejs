@@ -81,6 +81,7 @@ import { RouterLink, RouterView } from 'vue-router'
   align-items: end;
   flex-grow: 1;
   gap: 10px;
+  min-width: 400px;
 }
 .title p{
   filter: drop-shadow(0px 0px 2px rgb(78, 78, 252));
