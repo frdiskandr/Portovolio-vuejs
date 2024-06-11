@@ -8,11 +8,9 @@ import Skillview from './subcontent//SkillComponent.vue'
     <div class="introduce">
       <h1>Hi, theree..</h1>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio minima qui, laboriosam
-        sint obcaecati ex nemo ab natus sapiente, quidem dolorem cum eius accusantium quae. A,
-        omnis? Sapiente, laudantium harum!
+        Perkenalkan saya Faried iskandar. saya adalah seseorang yang senang sekali dengan dunia programming. Saya adalah seorang frontend developer, jika anda ingin mengenal saya lebih jauh silahkan kunjungi resume saya..:)
       </p>
-      <RouterLink to="/Resume">Resume</RouterLink>
+      <RouterLink to="/Resume">Resume &raquo;</RouterLink>
     </div>
     <div class="profile-image">
       <img src="/public/1718099505722.png" alt="" />
@@ -38,6 +36,7 @@ import Skillview from './subcontent//SkillComponent.vue'
 }
 .introduce p {
   padding: 1em;
+  text-align: center;
 }
 .introduce a {
   text-decoration: none;
