@@ -23,7 +23,7 @@
     </div>
 
     <div class="card">
-      <img src="/public/source/ai.png" alt="" />
+      <img src="https://miro.medium.com/v2/resize:fit:920/1*CdjOgfolLt_GNJYBzI-1QQ.jpeg" alt="" />
       <h3>Backend Golang</h3>
       <p>
         pembuatan sebuah API dengan bahasa golang
