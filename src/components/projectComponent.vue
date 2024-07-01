@@ -23,6 +23,18 @@
     </div>
 
     <div class="card">
+      <img src="/public/source/ai.png" alt="" />
+      <h3>Backend Golang</h3>
+      <p>
+        pembuatan sebuah API dengan bahasa golang
+      </p>
+      <div class="tecnologi">
+        <b>Tecnologi: golang, jwt, gorm, dll.</b>
+      </div>
+      <a href="https://github.com/frdiskandr/Backend-golang-userlogin" target="_blank">Demonstrasi &raquo;</a>
+    </div>
+
+    <div class="card">
       <img src="/public/source/dark-Ecomerce.png" alt="" />
       <h3>Dark Ecomerce</h3>
       <p>Proyek...</p>
