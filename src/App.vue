@@ -3,46 +3,71 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  
+
   <div class="main-conteiner">
     <div class="bacground">
       <video autoplay muted loop id="Background-video">
         <source src="/public/source/background.mp4" type="video/mp4">
       </video>
     </div>
+
     <div class="header">
-      <div class="header-container">
-        <div class="title">
-          <img src="/public/favicon.ico" alt="" class="logo">
-          <div class="name">
-               <h1>M Faried iskandar</h1>
-          <p>Frontend Developer</p>
+      <nav class="navbar navbar-expand-lg navbar-dark border-bottom">
+        <div class="container-fluid">
+          <span class="navbar-brand" href="#">Muhammad Faried Iskandar</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <RouterLink class="nav-link active" aria-current="page" to="/">Home</RouterLink>
+              </li>
+              <li class="nav-item">
+                <RouterLink class="nav-link" to="/projects">Projects</RouterLink>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Social Media
+                </a>
+                <ul class="dropdown-menu">
+                  <li><RouterLink class="dropdown-item" to="#">Linkedin</RouterLink></li>
+                  <li><RouterLink class="dropdown-item" to="#">Instagram</RouterLink></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Resume...</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
           </div>
         </div>
-        <div class="navbar">
-          <ul>
-            <li><RouterLink to="/">Home</RouterLink></li>
-            <li><RouterLink to="/project">Project</RouterLink></li>
-            <li><RouterLink to="/resume">Resume</RouterLink></li>
-            <li class="Git"><a href="https://github.com/frdiskandr" target="_blank">
-              <img src="/public/github_PNG40.png" alt="">
-              <p>Git</p>
-            </a></li>
-          </ul>
-        </div>
-      </div>
+      </nav>
     </div>
+  
+
+
     <div class="main">
-      <RouterView/>
+      <RouterView />
     </div>
     <div class="footer">
       <p>© 2024 Portofolio. All rights reserved.</p>
     </div>
-  </div>  
+  </div>
 </template>
 
 <style scoped>
-#Background-video{
+#Background-video {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -54,14 +79,15 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 
 
-.main-conteiner{
+.main-conteiner {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto 60px;
   grid-template-areas: "header" "main" "footer";
   z-index: 1;
 }
-.header{
+
+.header {
   grid-area: header;
   background-color: black;
   color: aliceblue;
@@ -69,13 +95,15 @@ import { RouterLink, RouterView } from 'vue-router'
   z-index: 1;
   width: 100%;
 }
-.header-container{
+
+.header-container {
   width: 70%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
 }
-.title{
+
+.title {
   display: flex;
   padding: 0.5em;
   align-items: end;
@@ -83,69 +111,35 @@ import { RouterLink, RouterView } from 'vue-router'
   gap: 10px;
   min-width: 400px;
 }
-.title p{
+
+.title p {
   filter: drop-shadow(0px 0px 2px rgb(78, 78, 252));
 }
-.logo{
+
+.logo {
   width: 2rem;
   height: 2rem;
   align-self: center;
   filter: drop-shadow(0px 0px 20px rgb(78, 78, 252));
 }
-.navbar{
+
+.navbar {
   align-content: center;
 
 }
-.navbar ul{
-  flex-grow: 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr auto;
-  list-style: none;
-}
-.navbar li{
-  text-align: center;
-  align-content: center;
-}
-.navbar a{
-  text-decoration: none;
-  color: whitesmoke;
-  padding: 0.5em;
-}
-.navbar a:hover{
-  background-color: whitesmoke;
-   border-radius: 10px;
-   color: black;
-}
-.Git{
-  margin-left: 2em;
-}
-.Git a{
-  display: flex;
-  align-items: center;
-  background-color: aliceblue;
-   border-radius: 10px;
-   color: black;
-}
-.Git a:hover{
-  background-color: rgb(78, 78, 252);
-  color: aliceblue;
-  box-shadow: 1px 1px 10px whitesmoke;
-}
-.Git img{
-  width: 20px;
-  height: 20px;
-}
-.main{
+
+.main {
   padding-top: 100px;
-    min-height: 100vh;
-    width: 70%;
-    margin: auto;
+  min-height: 100vh;
+  width: 70%;
+  margin: auto;
   grid-area: main;
   z-index: 0;
   position: relative;
   color: aliceblue
 }
-.footer{
+
+.footer {
   grid-area: footer;
   color: whitesmoke;
   text-align: center;
