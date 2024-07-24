@@ -21,12 +21,15 @@
     margin: 20px;
     display: flex;
     color: black;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 10px;
 }
 .card{
     flex: 1;
+    flex-basis: 150px;
     transition: 1s all ease;
-    height: 200px;
+    min-height: 200px;
     border: 1px solid black;
     background-color: rgb(14, 13, 13);
     overflow: hidden;
@@ -37,7 +40,7 @@
     object-fit: cover;
 }
 .card:hover{
-    flex: 2;
+    transform: scale(1.1);
     box-shadow: 0px 0px 100px blue;
 }
 </style>

@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "title": "Cafee shop",
+        "description": "enggunaProyek ini bertujuan membuat sebuah website cofee shop, yang saya berinama mooi cafe. di dalam web ini tidak hanya menyajikan hal-hal tantang coffe shopp saja tetapi saya integrasikan juga sistem payment, supaya user dapat membeli produk yang ada di coffe shp tsb.",
+        "image": "/public/source/mooiCafe.png",
+        "link": "https://youtu.be/DbwTeeNF_Vg",
+        "github": "https://github.com/frdiskandr",
+        "dateTimes": "2024",
+        "teknologies":[
+            "Vue.js",
+            "Axios api",
+            "Dll."
+        ]
+        
+    },
+    {
+        "id": 2,
+        "title": "AIvar",
+        "description": "Proyek ini bertujuan untuk mengembangkan sebuah aplikasi web kalkulator yang tidak hanya mampu melakukan operasi aritmatika dasar tetapi juga dilengkapi dengan fitur chat bot berbasis kecerdasan buatan (AI). Fitur chat bot ini akan membantu pengguna dengan memberikan solusi untuk masalah matematika yang lebih kompleks, menjawab pertanyaan terkait matematika, dan memberikan bantuan umum tentang penggunaan kalkulator.",
+        "image": "https://www.freecodecamp.org/news/content/images/size/w2000/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png",
+        "link": "https://aivar-pro.vercel.app/",
+        "github": "https://github.com/frdiskandr",
+        "dateTimes": "2024",
+        "teknologies":[
+            "React.js",
+            "Groqq api",
+            "Dll."
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Authorization Golang",
+        "description": "mengimplementasikan Bahasa Golang untuk membuat Rest Api autorization di sisi backend. ",
+        "image": "https://www.filepicker.io/api/file/O8dz87hXSheB05h3nO4M",
+        "link": "https://github.com/frdiskandr",
+        "github": "https://github.com/frdiskandr/Backend-golang-userlogin",
+        "dateTimes": "2024",
+        "teknologies":[
+            "Golang","Gin","jwt","gorm","dll."
+        ]
+    }
+]
